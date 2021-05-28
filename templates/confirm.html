@@ -7,13 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    
     <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
-    
-
 </head>
 <body>
-    
     <div class="nav-container">
         <div class="wrapper">
             <nav>
@@ -53,7 +49,7 @@
     <div class="header-title">
         <div class="wrapper">
 
-            Choose your insurance value
+            Purchase {{ price }} insurance in for the year of 2021?
             
         </div>
     </div>
@@ -61,36 +57,23 @@
     <div class="wrapper-options">
         <div class="row">
 
-            <form action="confirm" id = "5Form" method="post" class="BA-select">
-                {% csrf_token %}
-                <input type="hidden" value="5000" name="price">
-                <a href="javascript:;"><img id="5000" class="option" src="{% static 'images/5000.png' %}" alt=""></a>
+            <div class="BA-select">
+                <a href="#"><img class="option" src="{% static 'images/cancel.svg' %}" alt=""></a>
+
                 
                 
-            </form>
+            </div>
 
             <div class="BA-select">
-                <a href="confirm"><img class="option" src="{% static 'images/10000.png' %}" alt=""></a>
+                <a href="#"><img class="option" src="{% static 'images/confirm.svg' %}" alt=""></a>
                 
             </div>
 
         </div>
 
-        <div class="row">
 
-            <div class="BA-select">
-                <a href="confirm"><img class="option" src="{% static 'images/20000.png' %}" alt=""></a>
-                
 
-            </div>
-
-            <div class="BA-select">
-                <a href="confirm"><img class="option" src="{% static 'images/Other.png' %}" alt=""></a>
-
-                
-            </div>
-
-        </div>
+        
 
     </div>
 
@@ -99,6 +82,5 @@
         <img src="{% static 'images/footer.svg' %}" alt="">
     </div>
 
-<script src="{% static 'js/app.js' %}"></script>
 </body>
 </html>

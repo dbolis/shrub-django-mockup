@@ -1,0 +1,153 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+</head>
+<body>
+    <div class="nav-container">
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <a href="/">Shrub</a>
+                    <!-- <img src="images/ShrubLogo.png" alt=""> -->
+                </div>
+
+                <ul class="nav-items">
+                    <li>
+                    
+                        <a href="">About Us</a>
+                        
+                    </li>
+
+                    <li >
+                        
+                        <a href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <div class="header-logo">
+        <div class="wrapper">
+            
+            <div class="shrub-logo">
+                <img src="{% static 'images/ShrubLogo.png' %}" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="header-title">
+        <div class="wrapper">
+
+            Team
+ 
+        </div>
+    </div>
+
+    <div class="grid-wrapper">
+        <div class="grid-container">
+            <div class="grid-item">
+                
+                
+                <figure><center>
+                    <div class="face">
+                        <img src="{% static 'images/Daniel.png' %}" alt="">
+                    </div>
+                    <figcaption class="caption">  
+                        <strong>Daniel Bolis </strong><br>
+                        Software Developer <br>
+                        M.Sc.Aerospace Engineering 
+                    </center></figcaption>
+                </figure>
+                
+        
+
+            </div>
+            <div class="grid-item">
+
+                <figure><center>
+                    <div class="face">
+                        <img src="{% static 'images/Michael.png' %}" alt="">
+                    </div>
+                    <figcaption class="caption">  
+                        <strong> Michael Vander Meiden </strong> <br>
+                        Software Developer <br>
+                        M.Sc. Robotics & AI                        
+                    </center></figcaption>
+                </figure>
+
+
+            </div>
+
+            <div class="grid-item">
+
+                <figure><center>
+                    <div class="face">
+                        <img src="{% static 'images/Moe.png' %}" alt="">
+                    </div>
+                    <figcaption class="caption">
+                    
+                    <strong>Moe Köppenkastrop-Lüker </strong> <br>
+                    Venture Capital <br>
+                    M.Sc. Medical Engineering
+                    
+                    </center></figcaption>
+                </figure>
+
+
+            </div>
+
+                
+            
+        </div>
+    </div>
+
+    <div class="header-title">
+        <div class="wrapper">
+
+            Advisors
+ 
+        </div>
+    </div>
+
+    <div class="grid-wrapper">
+        <div class="grid-container">
+            <div class="grid-item">
+                <center><strong>Dr. David Kelly </strong><br>
+                    Prof of Economics, formerly <br>
+                    Chair of Economics Dept., <br>
+                    University of Miami
+                </center>
+            </div>
+
+            <div class="grid-item">
+                <center> <strong>Jose Lamela </strong> <br>
+                    Partner at Crowe Howard, <br>
+                    Insurance structuring expert, <br>
+                    former partner at Deloitte
+                </center>
+            </div>
+
+            <div class="grid-item">
+                <center> <strong>Doktor Gurson</strong> <br>
+                    Founder & CEO - RadAI  <br>
+                    YC S14
+                </center>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+</html>
