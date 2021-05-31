@@ -16,4 +16,7 @@ def about(request):
 
 def confirm(request):
     price=request.POST.get("price",False)
-    return render(request, 'confirm.html',{"price":price})
+    if price==False:
+        return render(request,'landing.html')
+    else:
+        return render(request, 'confirm.html',{"price":price})

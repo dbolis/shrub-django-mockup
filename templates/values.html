@@ -61,16 +61,24 @@
     <div class="wrapper-options">
         <div class="row">
 
-            <form action="confirm" id = "5Form" method="post" class="BA-select">
+            <form action="confirm" id ="5000Form" method="post" class="BA-select">
                 {% csrf_token %}
-                <input type="hidden" value="5000" name="price">
+                <input type="hidden" value="5,000" name="price">
                 <a href="javascript:;"><img id="5000" class="option" src="{% static 'images/5000.png' %}" alt=""></a>
+
+                
                 
                 
             </form>
 
             <div class="BA-select">
-                <a href="confirm"><img class="option" src="{% static 'images/10000.png' %}" alt=""></a>
+                <form action="confirm" id = "10000Form" method="post" class="BA-select">
+                    {% csrf_token %}
+                    <input type="hidden" value="10,000" name="price">
+                    <a href="javascript:;"><img id="10000" class="option" src="{% static 'images/10000.png' %}" alt=""></a>
+    
+                    
+                </form>
                 
             </div>
 
@@ -79,15 +87,25 @@
         <div class="row">
 
             <div class="BA-select">
-                <a href="confirm"><img class="option" src="{% static 'images/20000.png' %}" alt=""></a>
+                <form action="confirm" id = "20000Form" method="post" class="BA-select">
+                    {% csrf_token %}
+                    <input type="hidden" value="20,000" name="price">
+                    <a href="javascript:;"><img id="20000" class="option" src="{% static 'images/20000.png' %}" alt=""></a>
+                    
+                    
+                </form>
                 
 
             </div>
 
             <div class="BA-select">
-                <a href="confirm"><img class="option" src="{% static 'images/Other.png' %}" alt=""></a>
+                <form action="confirm" id = "50000Form" method="post" class="BA-select">
 
-                
+                    {% csrf_token %}
+                    <input type="hidden" value="50,000" name="price">
+                    <a href="javascript:;"><img id="50000" class="option" src="{% static 'images/50000.png' %}" alt=""></a>
+                    
+                </form>
             </div>
 
         </div>
@@ -95,6 +113,8 @@
     </div>
 
     
+
+
     <div class="footer-img">
         <img src="{% static 'images/footer.svg' %}" alt="">
     </div>

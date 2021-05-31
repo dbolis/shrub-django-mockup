@@ -247,6 +247,7 @@ nav ul {
     -ms-user-select: none;
 }
 
-.new {
-    background: url("images/5000.png");
+.purchase {
+    margin-top: 75px;
+    
 }
