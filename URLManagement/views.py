@@ -16,7 +16,8 @@ def about(request):
 
 def confirm(request):
     price=request.POST.get("price",False)
+    quote = (int(price.replace(",","")))//50
     if price==False:
         return render(request,'landing.html')
     else:
-        return render(request, 'confirm.html',{"price":price})
+        return render(request, 'confirm.html',{"price":price, "quote":quote})

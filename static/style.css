@@ -6,8 +6,8 @@
 body{
     
     background: #D4C6B2;
-    font-family: "Roboto",sans-serif;
-    font-style: normal;
+    /* font-family: "Roboto",sans-serif;
+    font-style: normal; */
 }
 
 /* Navigation */
@@ -79,7 +79,7 @@ nav ul {
     font-size: 64px;
     line-height: 75px;
     text-align: center;
-    letter-spacing: 0.088em;
+    letter-spacing: 0.058em;
 
     color: #456E3F;
 }
@@ -157,11 +157,11 @@ nav ul {
     font-family: "Roboto",sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 50px;
-    line-height: 64px;
+    font-size: 55px;
+    line-height: 67px;
     text-align: center;
-    letter-spacing: 0.088em;
-
+    letter-spacing: 0.048em;
+    
     color: #456E3F;
 
 
